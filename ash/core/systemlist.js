@@ -1,10 +1,9 @@
 /**
  * Ash-js System List
  */
-define([
-    'brejep/class'
-], function (Class) {
     'use strict';
+
+    var Class = require('./../brejep/class');
 
     var SystemList = Class.extend({
         head: null, /* System */
@@ -77,5 +76,4 @@ define([
         }
     });
 
-    return SystemList;
-});
+    module.exports = SystemList;

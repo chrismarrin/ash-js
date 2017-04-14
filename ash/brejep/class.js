@@ -29,7 +29,7 @@ var Worker = Person.extend({
 });
 var jane = new Worker("Jane", "CTO"); 
  */
-define([], function () {
+
 
     var Class = {
         
@@ -60,5 +60,4 @@ define([], function () {
         }
     };
 
-    return Class;
-});
+    module.exports = Class;
