@@ -6,6 +6,8 @@
 
 'use strict';
 
+var Class = require('./class');
+
 var Dictionary = Class.extend({
     VERSION: '0.1.0',
     keys: null,
