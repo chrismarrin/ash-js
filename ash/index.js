@@ -1,3 +1,3 @@
-var Ash = require('ash-framework');
+var Ash = require('./ash-framework');
 
 module.exports = Ash;
