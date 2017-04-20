@@ -17,7 +17,11 @@ This is a fork of Brett Jephson's version of [ash-js](https://github.com/BrettJe
 
 ## Usage
 
-Clone and place in project folder. npm module may be made available in the future.
+Install via npm.
+
+```
+npm install ash-cocos
+```
 
 ## Example on how to use ash-js
 * Ashteroids, a simple asteroids: https://github.com/brejep/ashjs-asteroids-example
