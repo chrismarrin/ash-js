@@ -6,7 +6,8 @@
  */
 
 'use strict';
-require('class')
+
+var Class = require('./class');
 
 var Dictionary = Class.extend({
     VERSION: '0.1.0',
@@ -21,7 +22,7 @@ var Dictionary = Class.extend({
 
     add: function (key, value) {
         var keyIndex = this.getIndex(key);
-        if(keyIndex >= 0) {
+        if (keyIndex >= 0) {
             this.values[keyIndex] = value;
         } else {
             this.keys.push(key);
@@ -31,7 +32,7 @@ var Dictionary = Class.extend({
 
     remove: function (key) {
         var keyIndex = this.getIndex(key);
-        if(keyIndex >= 0) {
+        if (keyIndex >= 0) {
             this.keys.splice(keyIndex, 1);
             this.values.splice(keyIndex, 1);
         } else {
@@ -42,8 +43,8 @@ var Dictionary = Class.extend({
     retrieve: function (key) {
         var value = null;
         var keyIndex = this.getIndex(key);
-        if(keyIndex >= 0) {
-            value = this.values[ keyIndex ];
+        if (keyIndex >= 0) {
+            value = this.values[keyIndex];
         }
         return value;
     },
@@ -52,9 +53,9 @@ var Dictionary = Class.extend({
         var i = 0,
             len = this.keys.length,
             key;
-        for(; i<len; ++i){
+        for (; i < len; ++i) {
             key = this.keys[i];
-            if(key == testKey) {
+            if (key == testKey) {
                 return i;
             }
         }
@@ -65,9 +66,9 @@ var Dictionary = Class.extend({
         var i = 0,
             len = this.keys.length,
             key;
-        for(; i<len; ++i){
+        for (; i < len; ++i) {
             key = this.keys[i];
-            if(key == testKey) {
+            if (key == testKey) {
                 return true;
             }
         }
@@ -80,7 +81,7 @@ var Dictionary = Class.extend({
             key,
             value;
 
-        for(; i<len; ++i) {
+        for (; i < len; ++i) {
             key = this.keys[i];
             value = this.values[i];
             var breakHere = action(key, value);

@@ -2,6 +2,8 @@
  * Ash-js Node
  */
 
+'use strict';
+
 var Class = require('./../brejep/class');
 
 var Node = Class.extend({
@@ -55,4 +57,3 @@ Node.create = function (schema) {
 };
 
 module.exports = Node;
-

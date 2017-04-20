@@ -3,6 +3,8 @@
  *
  */
 
+'use strict';
+
 var signals = require('./../vendor/signals');
 var Dictionary = require('./../brejep/dictionary');
 var Class = require('./../brejep/class');

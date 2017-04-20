@@ -1,6 +1,7 @@
 /**
  * Ash-js System
  */
+'use strict';
 
 var Class = require('./../brejep/class');
 
@@ -29,4 +30,3 @@ var System = Class.extend({
 });
 
 module.exports = System;
-

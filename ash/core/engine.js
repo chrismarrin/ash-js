@@ -5,12 +5,12 @@
 
 'use strict';
 
-var ComponentMatchingFamily = require('componentmatchingfamily');
-var EntityList = require('entitylist');
-var SystemList = require('systemlist');
+var ComponentMatchingFamily = require('./../core/componentmatchingfamily');
+var EntityList = require('./../core/entitylist');
+var SystemList = require('./../core/systemlist');
 var signals = require('./../vendor/signals');
 var Dictionary = require('./../brejep/dictionary');
-var Class = require('./..brejep/class');
+var Class = require('./../brejep/class');
 
 var Engine = Class.extend({
     familyClass: ComponentMatchingFamily,

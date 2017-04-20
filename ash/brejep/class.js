@@ -32,14 +32,14 @@ var jane = new Worker("Jane", "CTO");
  */
 
 var Class = {
-    
+
     extend: function (properties) {
         var superProto = this.prototype || Class;
         var proto = Object.create(superProto);
         // This method will be attached to many constructor functions
         // => must refer to "Class" via its global name (and not via "this")
         Class.copyOwnTo(properties, proto);
-        
+
         var constr = proto.constructor;
         if (!(constr instanceof Function)) {
             throw new Error("You must define a method 'constructor'");
@@ -51,8 +51,8 @@ var Class = {
         return constr;
     },
 
-    copyOwnTo: function(source, target) {
-        Object.getOwnPropertyNames(source).forEach(function(propName) {
+    copyOwnTo: function (source, target) {
+        Object.getOwnPropertyNames(source).forEach(function (propName) {
             Object.defineProperty(target, propName,
                 Object.getOwnPropertyDescriptor(source, propName));
         });

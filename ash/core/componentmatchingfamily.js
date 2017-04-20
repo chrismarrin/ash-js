@@ -3,11 +3,11 @@
  *
  */
 
-'use strict'
+'use strict';
 
-var Family = require('family');
-var NodePool = require('nodepool');
-var NodeList = require('nodelist');
+var Family = require('./../core/family');
+var NodePool = require('./../core/nodepool');
+var NodeList = require('./../core/nodelist');
 var Dictionary = require('./../brejep/dictionary');
 
 var ComponentMatchingFamily = Family.extend({
@@ -116,3 +116,4 @@ var ComponentMatchingFamily = Family.extend({
 });
 
 module.exports = ComponentMatchingFamily;
+

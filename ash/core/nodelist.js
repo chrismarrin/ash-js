@@ -4,8 +4,8 @@
 
 'use strict';
 
-var signals = require('./../vendor/signals');
 var Class = require('./../brejep/class');
+var signals = require('./../vendor/signals');
 
 var NodeList = Class.extend({
     constructor: function () {
@@ -202,4 +202,3 @@ var NodeList = Class.extend({
 });
 
 module.exports = NodeList;
-

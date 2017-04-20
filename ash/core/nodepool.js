@@ -1,7 +1,7 @@
 /**
  * Ash-js Node Pool
  */
-
+'use strict';
 
 var Class = require('./../brejep/class');
 
@@ -52,4 +52,3 @@ var NodePool = Class.extend({
 });
 
 module.exports = NodePool;
-

@@ -21,7 +21,8 @@ core.SystemList = require('./core/systemlist');
 
 // util classes
 // TODO separate this?
-core.Class = require('/.brejep/class');
+core.Class = require('./brejep/class');
 core.Signals = require('./vendor/signals');
 
 module.exports = core;
+

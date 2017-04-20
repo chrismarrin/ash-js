@@ -2,6 +2,8 @@
  * Ash-js Family
  */
 
+'use strict';
+
 var Class = require('./../brejep/class');
 
 var Family = Class.extend({
